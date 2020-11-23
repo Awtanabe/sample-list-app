@@ -1,5 +1,20 @@
 import React, {Component} from "react"
 
+class List extends Component {
+  constructor(props) {
+    super(props)
+  }
+
+  render() {
+    const { list } = this.props
+    return(
+      <li>
+       {list}
+      </li>
+    )
+  }
+}
+
 class Lists extends Component {
   constructor(props) {
     super(props)
@@ -21,7 +36,7 @@ class Lists extends Component {
       <div>
         <ul>
           <button onClick={this.addList.bind(this)}>増やす</button>
-          {lists.map((list) => <li>{list}</li>)}
+          {lists.map((list, index) => <List index={index} list={list}/>)}
         </ul>
       </div>
     )
