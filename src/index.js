@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-// import Lists from './components/Lists';
-import Count from './components/Count';
+import Lists from './components/Lists';
+// import Count from './components/Count';
 
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Count />
+    <Lists />
   </React.StrictMode>,
   document.getElementById('root')
 );
